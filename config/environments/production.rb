@@ -24,6 +24,8 @@ Discourse::Application.configure do
 
   config.log_level = :info
 
+  config.force_ssl = true
+
   if GlobalSetting.smtp_address
     settings = {
       address:              GlobalSetting.smtp_address,
